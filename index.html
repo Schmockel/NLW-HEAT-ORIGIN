@@ -17,15 +17,15 @@
         <span>
           <img src="images/build.svg" alt="Selo Rockseat" />
         </span>    
-          <img class="eu-foto" src="images/eu-Desenho.png" alt="Foto pessoal" />
+          <img id='minhaFoto' class="eu-foto" src="images/eu-Desenho.png" alt="Foto pessoal" />
         </div>
 
         <h1 id="userName">Daniel Pessoa Schmockel</h1>
-        <a href="https://github.com/Schmockel" target="_blank">
-          <img src="images/github.svg" alt="Github" />
-          Schmockel</a>
+        <a  id="userProfileGithub"href="https://github.com/Schmockel" target="_blank">
+          <img src="images/github.svg" alt="Github"/>
+          <span id="userLogin">Pedrim</span></a>
 
-        <p>
+        <p id="userBio">
           Determinador a ser um programador, editor de midia amador nos momentos
           de lazer
         </p>
@@ -58,27 +58,6 @@
         </ul>
       </div>
     </main>
-    <script>
-
-      const SocialMedia = {
-      github: 'Schmockel',
-      youtube: '',
-      facebook: '',
-      instagram: 'danielpschmockel',
-      twitter: ''
-      }
-
-      function ChangeSocialMedia(){
-
-        for(let li of socialLinks.children){
-          const social = li.getAttribute('class');
-          li.children[0].href = `https://www.${social}.com/${SocialMedia[social]}`
-          
-        }
-      }
-
-      ChangeSocialMedia();
-
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
