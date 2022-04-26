@@ -1,5 +1,5 @@
 const SocialMedia = {
-  github: "Schmockel",
+  github: "Schmockel", //mudar aqui resultara com que a APIs abaixo (ChangeSocialMedia e getGihubProfileInfos) mudem as informações, use o user do github
   youtube: "",
   facebook: "",
   instagram: "danielpschmockel",
